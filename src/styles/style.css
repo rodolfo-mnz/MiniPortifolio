@@ -1,0 +1,123 @@
+body {
+    background-color: #151515;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bloco-imagem,
+.bloco-info {
+    padding: 10px;
+}
+
+.foto-perfil {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #8806ce;
+    border: 4px solid #151515;
+}
+
+h1 {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 300ms ease;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+    color: #8806ce;
+}
+
+h1 span {
+    font-size: 32px;
+}
+
+.digitando {
+    padding-right: 1px;
+}
+
+.completar {
+    color: #555;
+    padding-left: 1px;
+}
+
+.subtitulo {
+    padding-top: 5px;
+    color: #555;
+}
+
+.centro {
+    text-align: center;
+    font-weight: 300;
+}
+
+.links {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 230px;
+    padding: 30px 0 30px 0;
+    border-top: 2px solid #555;
+    margin: 30px auto 0;
+
+}
+
+.links li {
+    display: inline-block;
+    padding: 0 5px;
+
+}
+
+
+.links li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 300ms ease;
+}
+
+.links:hover li a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.links li a:hover {
+    color: #8806ce;
+}
+
+.cursor {
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #8806ce;
+    transition: translateY(6px);
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+
+    0%,
+    30%,
+    100% {
+        opacity: 1;
+    }
+
+    50%,
+    80% {
+        opacity: 0;
+    }
+
+}
